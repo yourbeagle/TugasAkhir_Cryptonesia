@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "94264815476",
+    "firebase_url": "https://tugas-akhir-ppb-4eea3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tugas-akhir-ppb-4eea3",
+    "storage_bucket": "tugas-akhir-ppb-4eea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94264815476:android:8ea7c6cb4b19cc75cb4621",
+        "android_client_info": {
+          "package_name": "com.wahyu.utsa.tugasakhir_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94264815476-vbalac68993di79pv437e5iufqndankl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wahyu.utsa.tugasakhir_1",
+            "certificate_hash": "73c81c9a6dda3182f08ef3bbc1c82d157f47f039"
+          }
+        },
+        {
+          "client_id": "94264815476-tov2utn10dhob87ek01en07ur8ijrcdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2oiOGbscF5liwllsAX5rhaTImfA9Od6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94264815476-tov2utn10dhob87ek01en07ur8ijrcdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

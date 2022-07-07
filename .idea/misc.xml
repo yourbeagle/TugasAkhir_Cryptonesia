@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/drawable/btn_shape.xml" value="0.238" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/drawable/custom_checkbox.xml" value="0.207" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_after_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_detail_crypto.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_register.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_tracker.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/activity_watchlist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/custom_checkbox.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/custom_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/komen_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mainw/AndroidStudioProjects/TugasAkhir1/app/src/main/res/layout/watchlist_list.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="TugasAkhir-1.app" />
+      </set>
+    </option>
+  </component>
+</project>

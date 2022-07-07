@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#fff"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/img_r_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="backToRegister"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_r_1"
+        android:text="Welcome OnBoard!"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_r_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_r_1"
+        android:text="Let's help you meet up your tasks."
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_r_2"
+        android:layout_marginTop="10dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_r_2"
+        android:id="@+id/lyl_1"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:hint="Enter your username"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:id="@+id/etFullName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:hint="Enter your email"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:id="@+id/etEmail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:hint="Enter Password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"
+            android:id="@+id/etPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/etConfirmPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_r_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyl_1"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_r_1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ? "
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:onClick="signin"
+            android:textColor="@color/secondaryColor"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

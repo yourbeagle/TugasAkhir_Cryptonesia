@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailCrypto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="backToList"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:id="@+id/tvNameDetail"/>
+
+        <RelativeLayout
+            android:id="@+id/lyrDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameDetail">
+
+            <ImageView
+                android:id="@+id/imgCryptoDetail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/user_biru_1" />
+
+            <TextView
+                android:id="@+id/tvPriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@id/imgCryptoDetail"
+                android:fontFamily="@font/poppins"
+                android:text="Price"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/tickerCrypto"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/tvPriceDetail"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imgCryptoDetail"
+                android:src="@drawable/ticker" />
+
+
+            <TextView
+                android:id="@+id/tvPercentDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPriceDetail"
+                android:layout_toRightOf="@id/tickerCrypto"
+                android:text="percent" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkWatchlist"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:checked="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/custom_checkbox"
+                app:useMaterialThemeColors="false" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:checked="false"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/checkWatchlist1"
+                android:button="@drawable/custom_checkbox"
+                app:useMaterialThemeColors="false"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/lyrButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/lyrDetail">
+
+            <Button
+                android:id="@+id/btn1min"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:textSize="10sp" />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="30 min"
+                android:textSize="10sp"
+                android:id="@+id/btn30min"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 hour"
+                android:textSize="10sp"
+                android:id="@+id/btn1h"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="4 hour"
+                android:textSize="10sp"
+                android:id="@+id/btn4h"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 Day"
+                android:textSize="10sp"
+                android:id="@+id/btn1day"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/lyrWebview"
+            android:layout_below="@id/lyrButton">
+
+            <WebView
+                android:id="@+id/webViewChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lyKomen"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/lyrWebview">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rvKomen"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/done"
+            android:layout_margin="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/lyKomen"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/img_l_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="backToLogin"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_l_1"
+        android:text="Welcome Back!"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_l_1"/>
+
+    <ImageView
+        android:id="@+id/img_l_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_l_1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gambar_hp1" />
+
+    <LinearLayout
+        android:id="@+id/lyl_l_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_l_2"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_l_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyl_l_1"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_l_1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account ?  "
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:onClick="register"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="@color/secondaryColor"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    android:id="@+id/cardViewKomentar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlKomentar">
+
+        <TextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Display Name"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKomentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDisplayName"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ini isi komentarnya beneran ga boong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="crypto"
+            android:id="@+id/tvCryptoName"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
